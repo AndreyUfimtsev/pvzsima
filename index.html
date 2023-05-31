@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пункт выдачи заказов Sima-land</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header_main">
+            <div class="header_mainLeft">
+                <img src="img/logo simaland.png" alt="logo">
+            </div>
+            <div class="header_mainRight">
+                <ul class="nav_bar">
+                    <li class="nav_barLink"><a href="#"><span class="material-symbols-outlined">home</span></a></li>
+                    <li class="nav_barLink"><a href="#2">Преимущества</a></li>
+                    <li class="nav_barLink"><a href="#3">Калькулятор</a></li>
+                    <li class="nav_barLink"><a href="#4">Требования</a></li>
+                    <li class="nav_barLink"><a href="#5">Пункт выдачи</a></li>
+                    <li class="nav_barLink"><a href="#6">Оставить заявку</a></li>
+                    <li class="nav_barLink"><a href="#7">Контакты</a></li>
+                    <li class="nav_barLink"><a href="#8">О нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="1" class="banner">
+        <div class="form_sendOrder">
+            <h3>Начните зарабатывать вместе с
+                <span><br>Sima-land!</span>
+            </h3>
+            <p>Откройте партнёрский пункт выдачи в
+                своём городе.</p>
+            <a class="btn_banner btn" href="#7">Оставить заявку</a>
+        </div>
+    </section>
+
+    <section id="2" class="advantages container">
+        <div class="advantages_main">
+            <div class="advantages_blockLeft">
+                <h1>Наши преимущества</h1>
+                <p>
+                    Мы предлагаем работу с узнаваемым брендом и высокое ознаграждение. С каждым днём количество клиентов
+                    SIMA-LAND растёт, а вместе с ним увеличивается число заказов и ваша прибыль.
+                </p>
+            </div>
+            <div class="advantages_blockRight">
+                <div class="advantages_grid">
+                    <div class="advantages_gridElement">
+                        <h3>23 года на рынке</h3>
+                        <p>Успешного роста бизнеса</p>
+
+                    </div>
+                    <div class="advantages_gridElement">
+                        <h3>ТОП-5 Универсальных интернет-магазинов</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ad molestiae vero ullam quod
+                            asperiores.</p>
+
+                    </div>
+                    <div class="advantages_gridElement">
+                        <h3>Более 1 000 000 товаров</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ad molestiae vero ullam quod
+                            asperiores.</p>
+
+                    </div>
+                    <div class="advantages_gridElement">
+                        <h3>Более 300 брендированных ПВЗ по всей России</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ad molestiae vero ullam quod
+                            asperiores.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="3" class="calc container">
+        <div class="calc_main">
+            <div class="calc_blockLeft">
+                <h1>Калькулятор</h1>
+                <div class="calc_btns">
+                    <button type="button" data-name="brand" class="calc_btn btnBrand btn-Brand active"
+                        id="btnBrand">Брендированный</button>
+                    <button type="button" data-name="notBrand" class="calc_btn btn-NotBrand" id="notBtnBrand">Не
+                        брендированный</button>
+                </div>
+            </div>
+            <div class="calc_blockBrand">
+                <div class="calc_blockRight">
+                    <div class="calc_grid">
+                        <div class="calc_gridElement elem1">
+                            <h3>Количество точек</h3>
+                            <div id="calc_valueChange1">1</div>
+                            <input type="range" id="calc-count-pickuppoint" min="1" max="10" step="1" value="1"
+                                class="input-range" />
+                            <div class="calc-range">
+                                <p>1</p>
+                                <p>10</p>
+                            </div>
+                        </div>
+                        <div class="calc_gridElement elem2">
+                            <h3>Товарооборот точки</h3>
+                            <div id="calc_valueChange2">0</div>
+                            <input type="range" id="calc-turnover-pickuppoint" min="0" max="10000000" step="100000"
+                                value="0" class="input-range" />
+                            <div class="calc-range">
+                                <p>0</p>
+                                <p>10 000 000р</p>
+                            </div>
+                        </div>
+                        <div class="calc_gridElement elem3">
+                            <h3>Стоимость аренды </h3>
+                            <div id="calc_valueChange3">0</div>
+                            <input type="range" id="calc-price-pickuppoint" min="0" max="100000" step="1000" value="0"
+                                class="input-range" />
+                            <div class="calc_range">
+                                <p>0</p>
+                                <p>100 000 р</p>
+                            </div>
+                        </div>
+                        <div class="calc_gridElement elem4">
+                            <h3>Прочие расходы</h3>
+                            <div id="calc_valueChange4">0</div>
+                            <input type="range" id="calc-expenses-pickuppoint" min="0" max="50000" step="1000" value="0"
+                                class="input-range" />
+                            <div class="calc_range">
+                                <p>0</p>
+                                <p>50 000 р</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="calc_BlockPrice">
+                        <div class="calc_Block">
+                            <h3>Вознаграждение</h3>
+                            <span id="calc-remuneration-pickuppoint">0</span>р.
+                        </div>
+                        <div class="calc_Block">
+                            <h3>Доход</h3>
+                            <span id="calc-income-pickuppoint">0</span>р.
+                        </div>
+                    </div>
+                </div>
+                <a class="btn_calc btn" href="#7">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    <section id="4" class="wtf">
+
+    </section>
+    <section id="5" class="pvz">
+
+    </section>
+    <section id="6" class="order">
+
+    </section>
+    <section id="7" class="contacts">
+
+    </section>
+
+    <section id="8" class="videoBlock">
+        <h3>О Нас</h3>
+        <div class="video_style">
+            <video id="my-video" class="video" controls preload="auto" width="857" height="483"
+                poster="/img/previewplusarrow.png">
+                <source src="img/present.mp4" type='video/mp4'>
+            </video>
+        </div>
+    </section>
+    <!-- <script src="/js/app.js"></script> -->
+    <script src="/js/calc.js"></script>
+</body>
+
+</html>
